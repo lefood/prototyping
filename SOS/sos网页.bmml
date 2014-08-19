@@ -1,0 +1,32 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="1075" measuredH="683" mockupW="911" mockupH="621">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Map" x="218" y="250" w="318" h="280" measuredW="252" measuredH="222" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::MediaControls" x="322" y="562" w="-1" h="-1" measuredW="110" measuredH="36" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="595" y="241" w="189" h="194" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Image" x="595" y="450" w="189" h="194" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="164" y="62" w="688" h="621" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Paragraph" x="218" y="161" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u65F6%u95F4%uFF1A2014/08/20%0A%u5730%u70B9%uFF1A%u5317%u4EAC%u5E02%u671D%u9633%u533A%u671B%u4EAC%u885710%u53F7</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Paragraph" x="875" y="137" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>%u5982%u679C%u4FE1%u606F%u4E0A%u4F20%u4E0D%u6210%u529F%uFF0C%u5219%u76F8%u5E94%u5C55%u793A%u4F4D%u7F6E%u663E%u793A%u4E3A%u7A7A</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
