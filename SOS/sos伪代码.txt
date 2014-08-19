@@ -27,37 +27,36 @@ function get求救链接(){
 }
 
 function on定位成功(坐标){
-	upload("location", 坐标, userId, timestamp);
-	发送短信()
+	if(upload("location", 坐标, userId, timestamp) == 成功){
+		发送短信();
+	}
 }
 
 function on拍照成功(照片){
-	upload("photo", 照片, userId, timestamp);
-	发送短信()
+	if(upload("photo", 照片, userId, timestamp) == 成功){
+		发送短信();
+	}
 }
 
 function on录音成功(录音){
-	upload("record", 录音, userId, timestamp);
-	发送短信()
+	if(upload("record", 录音, userId, timestamp) == 成功){
+		发送短信();
+	}
 }
 
 function on定位失败(){
-	upload("location", null, userId, timestamp);
+	Toast("定位失败");
 }
 
 function on拍照失败(){
-	upload("photo", null, userId, timestamp);
+	Toast("拍照失败");
 }
 
 function on录音失败(){
-	upload("record", null, userId, timestamp);
+	Toast("录音失败");
 }
 
-function on收到短信(短信){
-	if(短信 == "来电"){
-		呼叫(紧急联系人);
-	}
-}
+
 
 
 # 服务端
