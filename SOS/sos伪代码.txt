@@ -1,0 +1,78 @@
+# app端
+
+function exec(){
+	userId = 获取用户id();
+	timestamp = 获取时间戳();
+
+	if(设定了定位){
+		定位();
+	}
+	if(设定了拍照){
+		前后摄像头拍照();
+	}
+	if(设定了录音){
+		录音10秒();
+	}
+}
+
+
+function 发送短信(){
+	if(第一个成功()){
+		发送求救短信(紧急联系人, get求救链接());
+	}
+}
+
+function get求救链接(){
+	return md5(userId+timestamp);
+}
+
+function on定位成功(坐标){
+	upload("location", 坐标, userId, timestamp);
+	发送短信()
+}
+
+function on拍照成功(照片){
+	upload("photo", 照片, userId, timestamp);
+	发送短信()
+}
+
+function on录音成功(录音){
+	upload("record", 录音, userId, timestamp);
+	发送短信()
+}
+
+function on定位失败(){
+	upload("location", null, userId, timestamp);
+}
+
+function on拍照失败(){
+	upload("photo", null, userId, timestamp);
+}
+
+function on录音失败(){
+	upload("record", null, userId, timestamp);
+}
+
+function on收到短信(短信){
+	if(短信 == "来电"){
+		呼叫(紧急联系人);
+	}
+}
+
+
+# 服务端
+
+function onUploaded(type, data, userId, timestamp){
+	save2file(data, md5(userId + timestamp));
+	insert(type, data, userId, timestamp);
+}
+
+
+function on访问(md5){
+	data = select(md5);
+	show(data);
+}
+
+
+
+
